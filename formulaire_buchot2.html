@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Commande en ligne</title>
+</head>
+<body>
+  <h1>Commande en ligne</h1>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend>Etat Civil</legend>
+
+        <p>
+          <span>Civilité :</span><br>
+          <label id="label-civilite-mlle" for="civilite-mlle"><input id="civilite-mlle" type="radio" name="civilite" value="mlle" required> Mlle</label><br>
+          <label id="label-civilite-madame" for="civilite-madame"><input id="civilite-madame" type="radio" name="civilite" value="madame"> Madame</label><br>
+          <label id="label-civilite-m" for="civilite-m"><input id="civilite-m" type="radio" name="civilite" value="m"> M</label>
+        </p>
+
+        <p>
+          <label id="label-prenom" for="prenom">Prénom:
+            <input id="prenom" type="text" name="prenom" autocomplete="given-name">
+          </label>
+        </p>
+
+        <p>
+          <label id="label-nom" for="nom">Nom:
+            <input id="nom" type="text" name="nom" autocomplete="family-name">
+          </label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Adresse de facturation</legend>
+
+        <p>
+          <label id="label-adresse_fact" for="adresse_fact">Adresse:<br>
+            <textarea id="adresse_fact" name="adresse_fact" rows="2" cols="30" autocomplete="address-line1"></textarea>
+          </label>
+        </p>
+
+        <p>
+          <label id="label-ville_fact" for="ville_fact">Ville:
+            <input id="ville_fact" type="text" name="ville_fact" autocomplete="address-level2">
+          </label>
+        </p>
+
+        <p>
+          <label id="label-cp_fact" for="cp_fact">Code postal :
+            <input id="cp_fact" type="text" name="cp_fact" pattern="[0-9]{5}" inputmode="numeric" autocomplete="postal-code">
+          </label>
+        </p>
+
+        <p>
+          <label id="label-pays_fact" for="pays_fact">Pays:
+            <select id="pays_fact" name="pays_fact" autocomplete="country">
+              <option value="" disabled selected>Choisissez un pays</option>
+              <option>Allemagne</option>
+              <option>Belgique</option>
+              <option>Canada</option>
+              <option>Espagne</option>
+              <option>États-Unis</option>
+              <option>France</option>
+              <option>Italie</option>
+              <option>Luxembourg</option>
+              <option>Royaume-Uni</option>
+              <option>Suisse</option>
+            </select>
+          </label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Adresse de livraison</legend>
+
+        <p>
+          <label id="label-adresse_liv" for="adresse_liv">Adresse:<br>
+            <textarea id="adresse_liv" name="adresse_liv" rows="2" cols="30" autocomplete="address-line1"></textarea>
+          </label>
+        </p>
+
+        <p>
+          <label id="label-ville_liv" for="ville_liv">Ville:
+            <input id="ville_liv" type="text" name="ville_liv" autocomplete="address-level2">
+          </label>
+        </p>
+
+        <p>
+          <label id="label-cp_liv" for="cp_liv">Code postal:
+            <input id="cp_liv" type="text" name="cp_liv" pattern="[0-9]{5}" inputmode="numeric" autocomplete="postal-code">
+          </label>
+        </p>
+
+        <p>
+          <label id="label-pays_liv" for="pays_liv">Pays:
+            <select id="pays_liv" name="pays_liv" autocomplete="country">
+              <option value="" disabled selected>Choisissez un pays</option>
+              <option>Allemagne</option>
+              <option>Belgique</option>
+              <option>Canada</option>
+              <option>Espagne</option>
+              <option>États-Unis</option>
+              <option>France</option>
+              <option>Italie</option>
+              <option>Luxembourg</option>
+              <option>Royaume-Uni</option>
+              <option>Suisse</option>
+            </select>
+          </label>
+        </p>
+      </fieldset>
+
+      <p><button type="submit">Envoyer</button></p>
+    </form>
+  </main>
+</body>
+</html>
